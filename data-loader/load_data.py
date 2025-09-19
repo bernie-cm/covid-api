@@ -16,7 +16,7 @@ while engine is None:
         engine = create_engine(f'postgresql://{db_user}:{db_pass}@{db_host}:5432/{db_name}')
         engine.connect()
     except Exception as e:
-        print('Waiting for PostgreSQL to be ready...')
+        print('Waiting for PostgreSQL to be ready...', e)
         time.sleep(3)
 
 url = "https://catalog.ourworldindata.org/garden/covid/latest/cases_deaths/cases_deaths.csv"
