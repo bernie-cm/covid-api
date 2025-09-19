@@ -11,5 +11,5 @@ services:
       - "5432:5432"
   data-loader:
     build: ./data-loader
-    dependes_on:
+    depends_on:
       - db

@@ -27,5 +27,5 @@ with open(csv_path, 'wb') as fin:
     fin.write(r.content)
 
 df = pd.read_csv(csv_path)
-df.to_sql('covd_data', engine, if_exists='replace', index=False)
+df.to_sql('covid_data', engine, if_exists='replace', index=False)
 print('Data loaded successfully!')
