@@ -8,8 +8,6 @@ on:
   
   workflow_dispatch:
 
-name: Lint Python Code
-
 jobs:
   lint:
     runs-on: ubuntu-latest
