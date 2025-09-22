@@ -33,4 +33,4 @@ jobs:
           context: ./data-loader
           file: ./data-loader/Dockerfile
           push: true
-          tags: user/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
