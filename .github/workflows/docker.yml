@@ -30,7 +30,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./data-loader
           file: ./data-loader/Dockerfile
           push: true
           tags: user/app:latest
